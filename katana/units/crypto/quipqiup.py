@@ -118,5 +118,5 @@ class Unit(NotEnglishAndPrintableUnit, CryptoUnit):
                 if sol["logp"] > best_score:
                     found_solution = sol["plaintext"]
                     best_score = sol["logp"]
-
+            print(found_solution)
             self.manager.register_data(self, found_solution)
